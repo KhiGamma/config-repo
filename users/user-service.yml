@@ -1,3 +1,8 @@
+server:
+  port: 8070
+  servlet:
+    context-path: /user-managment
+
 spring:
   data:
     mongodb:
