@@ -1,0 +1,10 @@
+spring :
+  cloud:
+      gateway:
+        routes:
+          - id: user-service-id
+            uri: lb://user-service
+            predicates:
+              - Path=/user-managment/**
+            filters:
+              - JwtCustomFilter
