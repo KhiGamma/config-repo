@@ -1,0 +1,10 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /quizz-managment
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://BDD:*BDD2022*@quizz-cluster.iq9wt.mongodb.net/quizz-db
+      database: quizz-db

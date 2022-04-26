@@ -12,6 +12,11 @@ spring :
             filters:
               - JwtCustomFilter
 
+          - id: quizz-service-id
+            uri: lb://quizz-service
+            predicates:
+              - Path=/quizz-managment/**
+
 management:
   endpoint:
     gateway:
