@@ -17,6 +17,13 @@ spring :
             predicates:
               - Path=/quizz-managment/**
 
+          - id: game-service-id
+            uri: lb://game-service
+            predicates:
+              - Path=/game-managment/**
+            filters:
+              - JwtCustomFilter
+
 management:
   endpoint:
     gateway:
